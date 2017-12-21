@@ -16,3 +16,73 @@ html {
   *, *::before, *::after {
     box-sizing: inherit;
   }
+
+body {
+  margin: 0;
+}
+
+header {
+  background-color: #18294f;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  padding: .5rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+nav ul {
+  list-style-type: none;
+  font-size: 1.125rem;
+  margin: 0;
+  padding: .5em .75em;
+}
+
+nav a{
+  color: #6c8fe0;
+  text-decoration: none;
+  float: left;
+  clear: left;
+  padding: 0;
+  padding-top: .5em;
+  padding-bottom: .5em;
+}
+
+@media only screen and (min-width: 25em) {
+
+  nav a {
+    float: left;
+    clear: none;
+    width: 50%;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  nav a {
+    float: left;
+    clear: none;
+    width: 25%;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  header h1 {
+    text-align: left;
+  }
+
+  nav ul {
+    float: right;
+    width: 100%;
+  }
+
+}
